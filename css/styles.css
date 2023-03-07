@@ -190,6 +190,23 @@ ul {
     color: var(--pressed-state);
 }
 
+@media screen and (min-width: 428px) {
+    .container.adaptive {
+        max-width: 428px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container.adaptive {
+        max-width: 768px;
+    }
+}
+@media screen and (min-width: 1140px) {
+    .container.adaptive {
+        max-width: 1140px;
+    }
+}
+
 /* ===================================== HERO */
 .section {
     display: block;

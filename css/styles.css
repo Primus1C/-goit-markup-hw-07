@@ -91,9 +91,17 @@ ul {
 .header-container {
     display: flex;
     align-items: center;
+    height: 72px;
     gap: 40px;
+    margin-left: 0px;
 }
 
+@media screen and (min-width: 768px) {
+    .header-container {
+        margin-left: auto;
+    }
+}
+    
 .header-nav {
     display: flex;
     align-items: center;
@@ -129,10 +137,16 @@ ul {
 }
 
 .list-header {
-    display: flex;
-    gap: 40px;
+    display: none;
 }
 
+@media screen and (min-width: 768px) {
+    .list-header {
+        display: flex;
+        gap: 40px;
+    }
+}
+ 
 .header-link {
     position: relative;
     display: block;
@@ -193,13 +207,11 @@ ul {
 
 .header-address {
     display: block;
-    /*    padding-top: 24px;
-        padding-bottom: 24px;*/
     
-        color: var(--color-text);
-        line-height: 1.5;
-        font-style: normal;
-        text-decoration: none;
+    color: var(--color-text);
+    line-height: 1.5;
+    font-style: normal;
+    text-decoration: none;
                 
     transition-property: color;
     transition-duration: var(--time-duration);
@@ -218,11 +230,10 @@ ul {
     }
 }
 
-.list-header-address {
+/*.list-header-address {
     display: none;
-    /*display: flex;
-    background-color: red;*/
-}
+    display: flex;
+}*/
 
 @media screen and (min-width: 768px) {
     .list-header-address {
@@ -230,7 +241,6 @@ ul {
         flex-direction: column;
         font-size: 12px;
         gap: 12px;
-        /*background-color: orange;*/
         padding-top: 0px;
         padding-bottom: 0px;
     }
@@ -242,14 +252,27 @@ ul {
         flex-direction: row;
         font: inherit;
         gap: 40px;
-        /*background-color: #31D0AA;*/
-        /*padding-top: 0px;
-        padding-bottom: 0px;*/
     }
 }
 
+.burger-icon {
+    display: block;
+    width: 32px;
+    height: 22px;
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    stroke: var(--color-dark);    
+}
+
+@media screen and (min-width: 768px) {
+    .burger-icon {
+        display: none;
+    }
+}
 
 /* ===================================== HERO */
+
 .section {
     display: block;
     padding-top: 120px;
@@ -258,7 +281,6 @@ ul {
 .hero {
     text-align: center;
     padding: 188px 0px;
-    /*background-color: var(--color-dark);*/
 
     background-image: linear-gradient(rgb(46,47,66, 0.7) , rgb(46, 47, 66, 0.7)), url("../images/people-office.jpg");
     background-size: 1440px auto; 

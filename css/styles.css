@@ -113,6 +113,7 @@ ul {
     gap: 40px;
 }
 
+
 .header-link {
     position: relative;
     display: block;
@@ -191,44 +192,14 @@ ul {
     color: var(--pressed-state);
 }
 
-/* @media screen and (min-width: 428px) {
-    .container.adaptive {
-        max-width: 428px;
-    }
-}
 
-@media screen and (min-width: 768px) {
-    .container.adaptive {
-        max-width: 768px;
-    }
-}
-@media screen and (min-width: 1140px) {
-    .container.adaptive {
-        max-width: 1140px;
-    }
-} */
 
-@media screen and (max-width: 1140px) {
-    .list-header-adress {
-        flex-direction: column;
-        gap: 12px;
-    }
-        .header-address {
-            font-size: 12px;
-            padding-top: 0px;
-            padding-bottom: 0px;
-        }
-}
-
-@media screen and (max-width: 768px) {
-    .list-header{
-        display: none;
-    }
-} 
 
 .list-header-adress {
     display: flex;
 }
+
+
 
 /* ===================================== HERO */
 .section {

@@ -51,10 +51,8 @@ ul {
 
 .container {
     max-width: 428px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 16px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -280,7 +278,7 @@ ul {
 
 .hero {
     text-align: center;
-    padding: 188px 0px;
+    padding: 112px 0px;
 
     background-image: linear-gradient(rgb(46,47,66, 0.7) , rgb(46, 47, 66, 0.7)), url("../images/people-office.jpg");
     background-size: 1440px auto; 
@@ -288,15 +286,37 @@ ul {
     background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding: 188px 0px;
+    }    
+}
+
 .hero-title {
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 1.1;
     color: var(--color-inverted);
-    max-width: 496px;
+    max-width: 320px;
     margin: auto;
-    margin-bottom: 48px;
+    margin-bottom: 72px;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: 56px;
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-title {
+        font-size: 56px;
+        max-width: 496px;
+        margin-bottom: 48px;
+    }
 }
 
 .button {
@@ -389,6 +409,7 @@ ul {
 }
 
 /* ===================================== WHAT ARE WE DOING */
+
 .activities {
     padding-bottom: 120px;
 }
@@ -697,9 +718,10 @@ ul {
     pointer-events: none;
 }
 
+
 .modal {
     position: absolute;
-    width: 408px;
+    width: 392px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -710,6 +732,13 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 72px 24px 24px 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 408px;
+        padding: 72px 16px 16px 16px;
+    }
 }
 
 .button-close {

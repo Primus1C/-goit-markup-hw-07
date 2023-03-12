@@ -273,8 +273,14 @@ ul {
 
 .section {
     display: block;
-    padding-top: 120px;
+    padding-top: 96px;
 }
+
+@media screen and (min-width: 1200px) {
+    .section {
+        padding-top: 120px;
+    }
+}    
 
 .hero {
     text-align: center;
@@ -389,23 +395,61 @@ ul {
     margin: -1px;
 }
 
-.list-item-advantage {
-    width: calc((100% - 72px) / 4 );
+.list-advantage {
+    width: calc(100% - 32px);
+}
+
+@media screen and (min-width: 768px) {
+    .list-advantage {
+        width: calc((100% - 48px) / 2);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+.list-advantage {
+        width: calc((100% - 72px) / 4);
+    }
+}
+
+.list-advantage-wrap{
+    flex-wrap: wrap;
 }
 
 .list-advantage-item {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 112px;
-   background-color: var(--color-light);
-   border-radius: 4px;
-   margin-bottom: 8px;
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .list-advantage-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: var(--color-light);
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
 }
 
 .advantage-icon{
     width: 64px;
     height: 64px;
+}
+
+.subtitle-advantage {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-dark);
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .subtitle-advantage {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+    }
 }
 
 /* ===================================== WHAT ARE WE DOING */
@@ -542,6 +586,7 @@ ul {
 }
 
 /* ===================================== PORTFOLIO */
+
 .portfolio {
     padding-top: 96px;
     padding-bottom: 120px;

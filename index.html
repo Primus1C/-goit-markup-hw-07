@@ -52,11 +52,14 @@
             </li>
           </ul>
         </address>
-      </div>
-      <div>
-        <svg class="burger-icon">
-          <use href="./images/icons.svg#hamburger"></use>
-        </svg>
+        <div>
+          <button type="button" class="menu-button is-open" > 
+            <svg class="burger-icon" aria-label="Переключатель мобильного меню" js-menu-container>
+              <use class="icon-burger-menu" href="./images/icons.svg#hamburger" js-open-menu></use>
+              <use class="icon-burger-cross" href="./images/icons.svg#close" js-close-menu></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -81,7 +84,7 @@
                 </svg>
               </div>
               <h3 class="subtitle-advantage">Strategy</h3>
-              <p>
+              <p class="text-advantage">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -93,7 +96,7 @@
                 </svg>
               </div>
               <h3 class="subtitle-advantage">Punctuality</h3>
-              <p>
+              <p class="text-advantage">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -105,7 +108,7 @@
                 </svg>
               </div>
               <h3 class="subtitle-advantage">Diligence</h3>
-              <p>
+              <p class="text-advantage">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -117,7 +120,7 @@
                 </svg>
               </div>
               <h3 class="subtitle-advantage">Technologies</h3>
-              <p>
+              <p class="text-advantage">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -126,8 +129,8 @@
         </div>
       </section>
 
-      <!-- <section class="section activities">
-        <div class="container">
+      <section class="section activities">
+        <div class="container container-activities">
           <h2 class="title">What are we doing</h2>
           <ul class="list">
             <li class="list-item-activity">
@@ -156,9 +159,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="title">Our Team</h2>
           <ul class="list worker-list">
@@ -332,7 +335,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- <section class="section customers">
         <div class="container">
@@ -533,5 +536,6 @@
     </div> 
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

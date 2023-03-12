@@ -253,21 +253,41 @@ ul {
     }
 }
 
-.burger-icon {
+.menu-button{
+    display: inline-flex;
+    /*background-color: transparent;
+    border: 0;*/
+
+}
+
+.menu-button .icon-burger-cross{
+    display: none;
+}
+
+.menu-button.is-open .icon-burger-cross{
     display: block;
+}
+
+.menu-button.is-open .icon-burger-menu {
+    display: none;
+}
+
+
+.burger-icon {
+    /*display: block;*/
     width: 32px;
     height: 22px;
-    position: absolute;
+    /*position: absolute;
     top: 24px;
-    right: 16px;
+    right: 16px;*/
     stroke: var(--color-dark);    
 }
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
     .burger-icon {
         display: none;
     }
-}
+}*/
 
 /* ===================================== HERO */
 
@@ -452,10 +472,35 @@ ul {
     }
 }
 
+.text-advantage {
+    font-weight: 400;
+    /*font-size: 16px;*/
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+    .text-advantage {
+        font-weight: 500;
+    }
+}
+
 /* ===================================== WHAT ARE WE DOING */
 
 .activities {
+    display: flex;
     padding-bottom: 120px;
+}
+
+@media screen and (max-width: 1200px) {
+    .activities{
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .container-activities {
+        display: none;
+    }
 }
 
 .list-item-activity {
@@ -471,15 +516,22 @@ ul {
 
 .worker-list {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
 }
 
 .list-item-team {
-    width: calc((100% - 72px) / 4);
+    max-width: 100%;
     background-color: var(--color-inverted);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.16);
     border-radius: 0 0 4px 4px;
+}
+
+@media screen and (min-width: 1200px) {
+    .list-item-team {
+        width: calc((100% - 72px) / 4);
+    }
 }
 
 .worker-descript {
@@ -492,7 +544,6 @@ ul {
     max-width: 100%;
     background: var(--color-accent);
     border: 1px solid var(--color-accent);
-
 }
 
 .title {

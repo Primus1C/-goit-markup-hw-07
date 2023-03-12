@@ -88,6 +88,7 @@ ul {
 
 .header-container {
     display: flex;
+    max-width: 100%;
     align-items: center;
     height: 72px;
     gap: 40px;
@@ -274,12 +275,8 @@ ul {
 
 
 .burger-icon {
-    /*display: block;*/
     width: 32px;
     height: 22px;
-    /*position: absolute;
-    top: 24px;
-    right: 16px;*/
     stroke: var(--color-dark);    
 }
 
@@ -288,6 +285,12 @@ ul {
         display: none;
     }
 }*/
+
+.mobile-menu{
+    position: fixed;
+
+    
+}
 
 /* ===================================== HERO */
 

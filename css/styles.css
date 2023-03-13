@@ -292,7 +292,7 @@ ul {
     top: 0;
     left: 0;
     background: white;
-    /*z-index: 100;*/
+    z-index: 100;
 
     /*background-color: rgba(252, 252, 252, 1);*/
     /*display: flex;*/
@@ -307,7 +307,7 @@ ul {
     
     transition-property: opacity, visibility;
     transition-duration: var(--time-duration);
-       transition-timing-function: var(--time-function);
+    transition-timing-function: var(--time-function);
 }
 
 .mobile-menu.is-open {
@@ -388,6 +388,12 @@ ul {
     background-size: 1440px auto; 
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)  {
+    .hero {
+    background-image: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)), url("../images/people-office@2x.jpg");
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -865,6 +871,13 @@ ul {
     transform: translate(0, 0);
 }
 
+.link-none-outline:hover,
+.link-none-outline:active { 
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
+    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
+}
+
 .image-portfolio {
     /*max-width: 100%;*/
     width: 100%;
@@ -877,13 +890,6 @@ ul {
 .link-none-outline {
     display: block;
     text-decoration: none;
-}
-
-.link-none-outline:hover,
-.link-none-outline:active { 
-    box-shadow: 0px 2px 1px 0px #2E2F4214;
-    box-shadow: 0px 1px 1px 0px #2E2F4229;
-    box-shadow: 0px 1px 6px 0px #2E2F4214;
 }
 
 .link-portfolio-wrapper {
@@ -946,7 +952,6 @@ ul {
     }
 }
 
-
 .footer-logo {
     margin-right: 0px;
 }
@@ -971,8 +976,6 @@ ul {
     max-width: 268px;
     margin-top: 16px;
 }
-
-
 
 .footer-socmedia {
     margin-right: 0px;
@@ -1016,7 +1019,6 @@ ul {
     width: 24px;
     height: 24px;
 }
-
 
 .subscribe-input {
     height: 40px;

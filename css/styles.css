@@ -497,9 +497,9 @@ ul {
     margin: -1px;
 }
 
-.list-advantage {
+/*.list-advantage {
     width: calc(100% - 32px);
-}
+}*/
 
 @media screen and (min-width: 768px) {
     .list-advantage {

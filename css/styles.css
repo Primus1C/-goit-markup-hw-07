@@ -1065,7 +1065,7 @@ ul {
     }
 }
 
-.subscribe-input:focus-within {
+.subscribe-input:focus {
     border-color: rgba(77, 90, 229, 1);
 }
 
@@ -1187,11 +1187,11 @@ ul {
     margin-top: 4px;
 }
 
-.form-input:focus-within {
+.form-input:focus {
     border-color: rgba(77, 90, 229, 1);
 }
 
-.form-field-wrapper:focus-within {
+.form-field-wrapper:focus {
     fill: var(--pressed-state);
 }
 
